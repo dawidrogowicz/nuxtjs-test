@@ -37,6 +37,10 @@ export default {
   modules: [
   ],
 
+  env: {
+    environment: 'test',
+  },
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   }

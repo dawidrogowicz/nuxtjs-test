@@ -10,6 +10,7 @@
         <h2 class="text-2xl leading-7 font-semibold">
           Welcome to your Nuxt Application
         </h2>
+        2: {{xd}}
         <p class="mt-3 text-gray-600">
           We recommend you take a look at the <a href="https://nuxtjs.org" target="_blank" class="button--doc text-green-500 hover:underline">Nuxt Documentation</a>, whether you are new or have previous experience with the framework.<br>
         </p>
@@ -47,6 +48,12 @@
 
 <script>
 export default {
-  name: 'NuxtTutorial'
+  name: 'NuxtTutorial',
+  data() {
+    return { xd: 'null' };
+  },
+  asyncData(context) {
+    return { xd: 'async null' };
+  }
 }
 </script>
